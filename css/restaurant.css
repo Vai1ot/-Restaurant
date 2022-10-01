@@ -1,0 +1,244 @@
+.main-footer-res {
+	width: 100%;
+	background: rgb(38, 38, 38);
+	padding-top: 50px;
+}
+
+.main-footer-res ul li a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 0.8em;
+}
+
+.bg-slaider {
+	width: 100%;
+	background-image: URL("../img/Restaurant/bg-slaider.png");
+	object-fit: cover;
+	background-repeat: no-repeat;
+	-moz-background-size: 100%;
+	/* Firefox 3.6+ */
+	-webkit-background-size: 100%;
+	/* Safari 3.1+ и Chrome 4.0+ */
+	-o-background-size: 100%;
+	/* Opera 9.6+ */
+	background-size: 100%;
+	/* Современные браузеры */
+	height: 384px;
+}
+
+.card-slaider {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	padding: 50px 0 50px 0;
+	box-shadow: 1px 1px 15px 0 rgb(182, 182, 182);
+}
+
+.slaider-title {
+	margin-bottom: 30px;
+}
+
+.h2-slider {
+	font-size: 2.4em;
+	line-height: 1.5em;
+}
+
+.btn-slaider {
+	background-color: rgb(27, 27, 27);
+	border: 2px solid rgb(27, 27, 27);
+	color: rgb(255, 255, 255);
+	border-radius: 40px;
+	padding: 6px 11px 6px 11px;
+	margin-left: 90px;
+}
+
+.content-slaider p {
+	font-size: 0.9em;
+	line-height: 1.47em;
+	color: rgb(91, 91, 91);
+}
+
+.content-slaider button {
+	font-size: 0.8em;
+	line-height: 1.6em;
+	font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.li-menu {
+	margin: 20px 20px 0 0;
+}
+
+.li-menu a {
+	text-decoration: none;
+	color: #2b2b2b;
+	cursor: pointer;
+	font-size: 1em;
+}
+
+.h2-menu {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin-top: 10px;
+}
+
+.card-menu {
+	margin-bottom: 53px;
+}
+
+.main-card-menu {
+	margin-top: 40px;
+}
+
+.text-content {
+	padding: 23px 0 23px 17px;
+}
+
+.title-card-menu h4 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.title-card-menu p {
+	margin-top: 3px;
+	font-size: 0.8em;
+	line-height: 1.53em;
+	color: #8a8a8a;
+}
+
+.price-card-menu p {
+	font-weight: 600;
+}
+
+.icon-store img {
+	width: 120px;
+	height: 40px;
+}
+
+@media (max-width: 1200px) {
+	.bg-slaider {
+		-moz-background-size: 100% 100%;
+		/* Firefox 3.6+ */
+		-webkit-background-size: 100% 100%;
+		/* Safari 3.1+ и Chrome 4.0+ */
+		-o-background-size: 100% 100%;
+		/* Opera 9.6+ */
+		background-size: 100% 100%;
+		/* Современные браузеры */
+	}
+
+	.card-menu {
+		margin-bottom: 33px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.card-menu:hover {
+		background: rgb(251, 251, 251);
+	}
+
+	.h2-menu {
+		margin-top: 45px;
+	}
+}
+
+@media (max-width: 375px) {
+	.h2-slider {
+		font-size: 1.6em;
+		line-height: 1.5em;
+	}
+
+	.btn-slaider {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+
+	.content-slaider {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-card-menu h4 {
+		font-size: 0.6em;
+		line-height: 1.5em;
+	}
+
+	.title-card-menu p {
+		margin-top: 3px;
+		font-size: 0.4em;
+		line-height: 1.53em;
+		color: #8a8a8a;
+	}
+
+	.price-card-menu p {
+		font-weight: 600;
+		font-size: 0.6em;
+	}
+
+	.icon-store img {
+		width: 60px;
+		height: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.h2-slider {
+		font-size: 2em;
+		line-height: 1.5em;
+	}
+
+	.slaider-title {
+		margin-bottom: 15px;
+	}
+
+	.btn-slaider {
+		margin-top: 50px;
+		margin-left: 0;
+	}
+
+	.content-slaider {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-card-menu h4 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	}
+
+	.img-content img {
+		width: 140px;
+		height: 112px;
+	}
+
+	.title-card-menu p {
+		margin-top: 3px;
+		font-size: 0.6em;
+		line-height: 1.53em;
+		color: #8a8a8a;
+	}
+
+	.price-card-menu p {
+		font-weight: 600;
+		font-size: 0.6em;
+	}
+
+	.icon-store img {
+		width: 80px;
+		height: 30px;
+	}
+
+	.bg-slaider {
+		background-image: URL("../img/Restaurant/bg-slaider-sm.png");
+		width: 100%;
+		object-fit: cover;
+		background-repeat: no-repeat;
+		-moz-background-size: 100%;
+		/* Firefox 3.6+ */
+		-webkit-background-size: 100%;
+		/* Safari 3.1+ и Chrome 4.0+ */
+		-o-background-size: 100%;
+		/* Opera 9.6+ */
+		background-size: 100% 100%;
+		/* Современные браузеры */
+	}
+}

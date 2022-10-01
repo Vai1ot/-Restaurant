@@ -1,0 +1,23 @@
+.stores {
+	margin-top: 30px;
+}
+
+.card-img {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.stores a {
+	text-decoration: none;
+	color: #262626;
+}
+
+.stores img {
+	width: 100%;
+	overflow: hidden;
+	display: block;
+}
+
+.card {
+	margin-top: 25px;
+}

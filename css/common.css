@@ -1,0 +1,123 @@
+.container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+button {
+	font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+	color: #262626;
+}
+
+.scroller-area {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+	background: url("../img/Stores/arrow.svg") center no-repeat, rgb(92, 187, 97);
+	display: block;
+	cursor: pointer;
+	-webkit-transition: bottom .2s ease-out 0s;
+	-moz-transition: bottom .2s ease-out 0s;
+	-o-transition: bottom .2s ease-out 0s;
+	transition: bottom .2s ease-out 0s;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.removed {
+	transition: background-color .3s,
+		opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@media (max-width: 420px) {
+	.basket {
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card-hover {
+		background: rgb(241, 241, 241);
+	}
+
+	.main-footer-res a,
+	.main-footer a {
+		text-decoration: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header-button:hover {
+		background: rgb(38, 38, 38);
+		color: rgb(255, 255, 255);
+		border-color: rgb(0, 0, 0);
+	}
+
+	header img,
+	.stores img,
+	.icon-store img {
+		-webkit-transition: 2s;
+		-moz-transition: 2s;
+		-o-transition: 2s;
+		transition: 2s;
+		cursor: pointer;
+	}
+
+	header img:hover,
+	.stores img:hover,
+	.icon-store img:hover {
+		transform: scale(1.2);
+	}
+
+	.card-hover:hover {
+		background: rgb(238, 238, 238);
+	}
+
+	.main-footer {
+		margin-top: 90px;
+	}
+
+	.main-footer-res {
+		margin-top: 0;
+	}
+
+	.main-footer-res a:hover,
+	.main-footer a:hover {
+		text-decoration: underline;
+		text-decoration-color: rgb(255, 255, 255);
+		cursor: pointer;
+	}
+
+	.scroller-area:hover {
+		background-color: #3da142;
+		transition: background-color .3s;
+	}
+
+	.scroller-area:active {
+		background-color: #48b64d;
+	}
+}
