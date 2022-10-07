@@ -10,7 +10,7 @@
 }
 
 .nav-footer span {
-	color: #498a49;
+	color: #4ca149
 }
 
 .nav-footer p {
@@ -41,7 +41,7 @@
 }
 
 .footer-lang {
-	background: url("../img/Stores/world-1.svg") 16px center no-repeat, rgb(55, 55, 55);
+	background: url("../img/Stores/world.svg") 16px center no-repeat, rgb(55, 55, 55);
 	color: rgb(255, 255, 255);
 	font-family: 'Roboto';
 	font-size: 0.8em;

@@ -1,7 +1,9 @@
 const select = document.querySelector("select");
 const alllang = ["ru", "en"];
-let inp = document.querySelector("input");
+const tabsLi = document.querySelectorAll(".li-menu");
+const tabsitem = document.querySelectorAll(".tab-items");
 
+// ----Мультиязычность----
 select.addEventListener("change", changeUrlLanguage);
 
 function changeUrlLanguage() {
@@ -12,20 +14,27 @@ function changeUrlLanguage() {
 
 function changeLanguage() {
   let hash = window.location.hash;
+  let inp = document.querySelector("input");
+
   hash = hash.substr(1);
-  console.log(hash);
+
+  // Принудительное присваивание хэша
   if (!alllang.includes(hash)) {
     location.href = window.location.pathname + "#ru";
     location.reload();
   }
   select.value = hash;
-  
+
+  // Меняем язык заголовка сайта
   document.querySelector("title").innerHTML = LangArr["title"][hash];
-  
-  inp.value = inp.getAttribute("placeholder");
-  inp.value = LangArr["search"][hash];
 
+  // Меняем язык поисковой строки
+  if (inp) {
+    inp.value = inp.getAttribute("placeholder");
+    inp.value = LangArr["search"][hash];
+  }
 
+  // Меняем язык всего остального контента
   for (let key in LangArr) {
     let elem = document.querySelector(".lng-" + key);
     if (elem) {
@@ -35,3 +44,35 @@ function changeLanguage() {
 }
 
 changeLanguage();
+
+// ----Табы, вкладки----
+// Вызов функции при смене таба
+tabsLi.forEach(onTabClick);
+
+function onTabClick(item) {
+  // Активация функции по клику на переключатель таба
+  item.addEventListener("click", function () {
+    let currentItem = item;
+    let tabid = currentItem.getAttribute("data-tab");
+    let currentTab = document.querySelector(tabid);
+
+    if (!currentItem.classList.contains("active")) {
+      tabsLi.forEach(function (item) {
+        // Удаляем класс active у всех переключателей
+        item.classList.remove("active");
+      });
+
+      tabsitem.forEach(function (item) {
+        // Удаляем класс active у всех табов
+        item.classList.remove("active");
+      });
+
+      // Присваем класс active активному переключателю и табу
+      currentItem.classList.add("active");
+      currentTab.classList.add("active");
+    }
+  });
+}
+
+// Имитируем первый клик
+document.querySelector(".li-menu").click();
