@@ -28,7 +28,7 @@ function changeLanguage() {
   document.querySelector("title").innerHTML = LangArr["title"][hash];
 
   // Меняем язык поисковой строки
-  document.getElementById("search").placeholder = LangArr["search"][hash];
+  // document.getElementById("search").placeholder = LangArr["search"][hash];
 
   // Меняем язык всего остального контента
   for (let key in LangArr) {
