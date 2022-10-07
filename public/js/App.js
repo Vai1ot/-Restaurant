@@ -2,6 +2,7 @@ const select = document.querySelector("select");
 const alllang = ["ru", "en"];
 const tabsLi = document.querySelectorAll(".li-menu");
 const tabsitem = document.querySelectorAll(".tab-items");
+const searchInput = document.querySelector(".search-input");
 
 // ----Мультиязычность----
 select.addEventListener("change", changeUrlLanguage);
@@ -28,7 +29,16 @@ function changeLanguage() {
   document.querySelector("title").innerHTML = LangArr["title"][hash];
 
   // Меняем язык поисковой строки
-  document.getElementById("searchID").placeholder = LangArr["search"][hash];
+  if (searchInput) {
+    if (hash === "ru") {
+      document.getElementById("searchID").placeholder =
+        "Поиск по ресторанам и кухням";
+    }
+    if (hash === "en") {
+      document.getElementById("searchID").placeholder =
+        "Search by restaurants and cuisines";
+    }
+  }
 
   // Меняем язык всего остального контента
   for (let key in LangArr) {
@@ -42,6 +52,7 @@ function changeLanguage() {
 changeLanguage();
 
 // ----Табы, вкладки----
+
 // Вызов функции при смене таба
 tabsLi.forEach(onTabClick);
 
@@ -70,9 +81,6 @@ function onTabClick(item) {
   });
 }
 
-// Имитируем первый клик
 document.querySelector(".li-menu").click();
 
 // Реализация поиска по странице
-let inputText = document.querySelector(".search");
-let submitForm = document.querySelector("");
