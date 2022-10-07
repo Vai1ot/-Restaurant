@@ -14,7 +14,6 @@ function changeUrlLanguage() {
 
 function changeLanguage() {
   let hash = window.location.hash;
-  let inp = document.querySelector("input");
 
   hash = hash.substr(1);
 
@@ -29,10 +28,7 @@ function changeLanguage() {
   document.querySelector("title").innerHTML = LangArr["title"][hash];
 
   // Меняем язык поисковой строки
-  if (inp) {
-    inp.value = inp.getAttribute("placeholder");
-    inp.value = LangArr["search"][hash];
-  }
+  document.getElementById("search").placeholder = LangArr["search"][hash];
 
   // Меняем язык всего остального контента
   for (let key in LangArr) {
@@ -76,3 +72,7 @@ function onTabClick(item) {
 
 // Имитируем первый клик
 document.querySelector(".li-menu").click();
+
+// Реализация поиска по странице
+let inputText = document.querySelector(".search");
+let submitForm = document.querySelector("");

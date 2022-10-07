@@ -25,3 +25,7 @@
 .card {
 	margin-top: 25px;
 }
+
+.stores.hide{
+	display: none;
+}
