@@ -46,12 +46,12 @@
 	<main class="main" id="main-anchor">
 		<div class="search container">
 			<input class="search-input" type="search" name="search-input-main" id="searchID"
-				placeholder="Поиск по ресторанам и кухням">
+				placeholder="Поиск по ресторанам и кухням" onkeyup="SearchProduct()">
 		</div>
 		<div class="container">
 			<div class="main-stores-container">
 				<h2 class="stores-ttile lng-title">Рестораны в москве</h2>
-				<div class="row stores">
+				<div class="row stores" id="card_stores">
 					<div class="col-lg-4 col-md-6 col-sm-12 col-12 stores_search">
 						<a href="public/files/restaurant-ru.html">
 							<div class="card border-0">
@@ -177,6 +177,9 @@
 								</div>
 							</div>
 						</a>
+					</div>
+					<div id="ErrorSearch" class="SearchText ErrorText">
+						<p>По вашему запросу ничего не найдено</p>
 					</div>
 				</div>
 			</div>

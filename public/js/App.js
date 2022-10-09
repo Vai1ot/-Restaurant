@@ -2,7 +2,7 @@ const select = document.querySelector("select");
 const alllang = ["ru", "en"];
 const tabsLi = document.querySelectorAll(".li-menu");
 const tabsitem = document.querySelectorAll(".tab-items");
-const searchInput = document.querySelector(".search-input");
+const searchInput = document.getElementById("searchID");
 
 // ----Мультиязычность----
 select.addEventListener("change", changeUrlLanguage);
@@ -84,3 +84,32 @@ function onTabClick(item) {
 document.querySelector(".li-menu").click();
 
 // Реализация поиска по странице
+
+function SearchProduct() {
+  const input = searchInput.value.toUpperCase();
+  const cardCont = document.getElementById("card_stores");
+  let errorSearch = document.getElementById("ErrorSearch");
+
+  const card = cardCont.getElementsByClassName("stores_search");
+
+  let count = 0;
+
+  for (let i = 0; i < card.length; i++) {
+    let title = card[i].querySelector(".stores_search h5.title_search");
+
+    if (title.innerText.toUpperCase().indexOf(input) > -1) {
+      card[i].style.display = "";
+      count--;
+    } else {
+      card[i].style.display = "none";
+      count++;
+    }
+  }
+  console.log(count + "count");
+  console.log(card.length + "card");
+  if (card.length === count) {
+    errorSearch.classList.remove("SearchText");
+  } else {
+    errorSearch.classList.add("SearchText");
+  }
+}

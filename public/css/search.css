@@ -13,3 +13,11 @@
 .search-input:focus::placeholder {
   opacity: 0;
 }
+
+.SearchText{
+  display: none;
+}
+
+.ErrorText{
+margin-left: 18px;
+}
