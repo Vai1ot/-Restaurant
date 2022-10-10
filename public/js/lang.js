@@ -12,16 +12,16 @@ var LangArr = {
     en: "Moscow Restaurants",
   },
   mac: {
-    ru: "Макдоналдс-газетный",
-    en: "Mcdonalds-newspaper",
+    ru: "Макдоналдс - газетный",
+    en: "Mcdonalds - newspaper",
   },
   nya: {
     ru: "НЯ - NHA",
     en: "NYA - NHA",
   },
   dimsum: {
-    ru: "DimSum & Co = ЦДМ",
-    en: "DimSum & Co = CDM",
+    ru: "DimSum & Co - ЦДМ",
+    en: "DimSum & Co - CDM",
   },
   dvizok: {
     ru: "ДвижОК - Манежная",
