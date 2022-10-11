@@ -68,6 +68,40 @@ button {
 	.main-footer a {
 		text-decoration: none;
 	}
+
+	.header-button:active {
+		background: rgb(38, 38, 38);
+		color: rgb(255, 255, 255);
+		border-color: rgb(0, 0, 0);
+	}
+
+	header img,
+	.stores img,
+	.icon-store img {
+		-webkit-transition: 2s;
+		-moz-transition: 2s;
+		-o-transition: 2s;
+		transition: 2s;
+		cursor: pointer;
+	}
+
+	header img:active,
+	.stores img:active,
+	.icon-store img:active {
+		transform: scale(1.2);
+	}
+
+	.main-footer-res a:active,
+	.main-footer a:active {
+		text-decoration: underline;
+		text-decoration-color: rgb(255, 255, 255);
+		cursor: pointer;
+	}
+
+	.scroller-area:active {
+		background-color: #3da142;
+		transition: background-color .3s;
+	}
 }
 
 @media (min-width: 1200px) {
