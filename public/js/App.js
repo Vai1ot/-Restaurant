@@ -81,7 +81,9 @@ function onTabClick(item) {
   });
 }
 
-document.querySelector(".li-menu").click();
+function ProductiveClick() {
+  document.querySelector(".li-menu").click();
+}
 
 // Реализация поиска по странице
 

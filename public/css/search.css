@@ -3,6 +3,14 @@
   width: 100%;
 }
 
+input {
+  caret-color: #4ca149;
+  cursor: pointer;
+}
+input[type=search]:focus{
+  cursor: text;
+}
+
 .search-input {
   width: 100%;
   outline: none;
@@ -14,10 +22,10 @@
   opacity: 0;
 }
 
-.SearchText{
+.SearchText {
   display: none;
 }
 
-.ErrorText{
-margin-left: 18px;
+.ErrorText {
+  margin-left: 18px;
 }
