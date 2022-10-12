@@ -32,25 +32,25 @@
 <body onload="ProductiveClick()">
    <div class="window windowShow bg-window" id="window-show">
       <div class="dark-bg-form"></div>
-      <div class="login-form" id="closeLogin">
-         <div class="close-form-div" id="closeForm">
+      <div class="login-form" id="CloseLoginForm">
+         <div class="close-form-div" id="CloseImgLoginForm">
             <img src="../img/Forms/free-icon-cancel-130887.png" clsss="close-form" alt="Зыкрыть форму">
          </div>
          <div class="login-img js-tilt" data-tilt>
             <img src="../img/Forms/img-01.png" alt="Авторизация">
          </div>
          <form class="form-content validate-form" action="">
-            <span class="login-form-title">Member Login</span>
+            <span class="login-form-title">Авторизация</span>
 
             <div class="wrap-input validate-input" data-validate="Valid email is required: ex@abc.xyz">
-               <input class="input" type="text" name="email" placeholder="Email">
+               <input class="input" type="text" name="email" placeholder="Почта / Имя пользователя">
                <span class="focus-input"></span>
                <span class="symbol-input">
                   <i class="fa fa-envelope" aria-hidden="true"></i>
                </span>
             </div>
             <div class="wrap-input validate-input" data-validate="Password is required">
-               <input class="input" type="password" name="pass" placeholder="Password">
+               <input class="input" type="password" name="pass" placeholder="Пароль">
                <span class="focus-input"></span>
                <span class="symbol-input">
                   <i class="fa fa-lock" aria-hidden="true"></i>
@@ -59,22 +59,78 @@
 
             <div class="container-login-form-btn">
                <button class="login-form-btn">
-                  Login
+                  Войти
                </button>
             </div>
 
             <div class="text1">
-               <span class="txt1">
-                  Forgot
-               </span>
-               <a class="txt2" href="#">
-                  Username / Password?
+               <a class="txt2" href onclick="return false;">
+                  Проблема со входом в систему?
                </a>
             </div>
 
             <div class="text2">
-               <a class="txt2" href="#">
-                  Create your Account
+               <a class="txt2" href onclick="return false;" id="btnWindowCreate">
+                  Создать новую учетную запись
+                  <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+               </a>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="window windowShow bg-window" id="creatWindow">
+      <div class="dark-bg-form"></div>
+      <div class="create-form" id="CloseCreatForm">
+         <div class="close-form-div" id="CloseImgCreateForm">
+            <img src="../img/Forms/free-icon-cancel-130887.png" clsss="close-form" alt="Зыкрыть форму">
+         </div>
+         <div class="create-img js-tilt" data-tilt>
+            <img src="../img/Forms/img-01.png" alt="Авторизация">
+         </div>
+         <form class="form-content validate-form" action="">
+            <span class="login-form-title">Регистрация</span>
+
+            <div class="wrap-input validate-input">
+               <input class="input" type="text" name="users" data-validate="Неподходящее имя пользователя"
+                  placeholder="Имя пользователя" pattern="^[a-z0-9_-]{3,15}$">
+               <span class="focus-input"></span>
+               <span class="symbol-input">
+                  <i class="fa-solid fa-person"></i>
+               </span>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Введите почту в формате: ex@abc.xyz">
+               <input class="input" type="text" name="email"
+                  pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Почта">
+               <span class="focus-input"></span>
+               <span class="symbol-input">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+               </span>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Пароль не удовлетворяет требовниям">
+               <input class="input" type="password" name="pass" placeholder="Пароль">
+               <span class="focus-input"></span>
+               <span class="symbol-input">
+                  <i class="fa-solid fa-lock"></i>
+               </span>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Пароли не совпадают">
+               <input class="input" type="password" name="pass" placeholder="Повторите пароль">
+               <span class="focus-input"></span>
+               <span class="symbol-input">
+                  <i class="fa-solid fa-user-lock"></i>
+               </span>
+            </div>
+
+            <div class="container-login-form-btn">
+               <button class="login-form-btn">
+                  Создать
+               </button>
+            </div>
+
+            <div class="text3">
+               <span class="txt1">Есть учетная запись?</span>
+               <a class="txt2" href onclick="return false;" id="btnWindowLogin">
+                  Авторизоваться
                   <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                </a>
             </div>
@@ -845,7 +901,11 @@
    <!-- Подключения стилей -->
    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
+
+   <!-- Font Awesome -->
    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-6.2.0-web/css/solid.min.css">
+   <link rel="stylesheet" type="text/css" href="../fonts/fontawesome-free-6.2.0-web/css/fontawesome.min.css">
 
 
 </body>

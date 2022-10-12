@@ -63,6 +63,7 @@
 
 .login-img {
    width: 316px;
+   margin-top: 25px;
 }
 
 .login-img img {
@@ -351,6 +352,7 @@ textarea:-ms-input-placeholder {
 
    .login-img {
       width: 35%;
+      margin-top: 40px;
    }
 
    .form-content {
@@ -358,12 +360,16 @@ textarea:-ms-input-placeholder {
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 876px) {
    .login-form {
       padding: 100px 80px 33px 80px;
    }
 
    .login-img {
+      display: none;
+   }
+
+   .create-img {
       display: none;
    }
 
@@ -379,7 +385,9 @@ textarea:-ms-input-placeholder {
 }
 
 /* Валидация */
-input:invalid {border-color: red;}
+input:invalid {
+   border-color: red;
+}
 
 
 
