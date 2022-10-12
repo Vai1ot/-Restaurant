@@ -28,6 +28,10 @@ textarea {
 	color: #262626;
 }
 
+* img {
+	pointer-events: none;
+}
+
 .scroller-area {
 	position: fixed;
 	bottom: 10px;

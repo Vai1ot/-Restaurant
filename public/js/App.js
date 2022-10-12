@@ -116,18 +116,18 @@ function SearchProduct() {
   }
 }
 
-// ---- Форма регистрации ----
+// ---- Форма авторизации ----
 const btnOpenForm = document.getElementById("show-btn");
 const forms = document.getElementById("window-show");
-const closeForm = document.getElementById("closeForm");
-const loginClose = document.getElementById("closeLogin");
+const closeLoginForm = document.getElementById("CloseImgLoginForm");
+const loginClose = document.getElementById("CloseLoginForm");
 
 btnOpenForm.addEventListener("click", function () {
   // alert(e.target.id);
   forms.classList.remove("windowShow");
 });
 
-closeForm.addEventListener("click", function () {
+closeLoginForm.addEventListener("click", function () {
   // alert(e.target.id);
   forms.classList.add("windowShow");
 });
@@ -140,9 +140,46 @@ document.addEventListener("keydown", function (e) {
 });
 
 forms.addEventListener("click", (e) => {
-  const withinBoundaries = e.composedPath().includes(loginClose);
+  const withinLoginBoundaries = e.composedPath().includes(loginClose);
 
-  if (!withinBoundaries) {
+  if (!withinLoginBoundaries) {
     forms.classList.add("windowShow"); // скрываем элемент т к клик был за его пределами
   }
+});
+
+// Окно регистрации
+const createClose = document.getElementById("CloseCreatForm");
+const windowCreatAcc = document.getElementById("creatWindow");
+const btnWindowCreate = document.getElementById("btnWindowCreate");
+const closeCreatForm = document.getElementById("CloseImgCreateForm");
+const btnOpenLoginForm = document.getElementById("btnWindowLogin");
+
+btnWindowCreate.addEventListener("click", function () {
+  forms.classList.add("windowShow");
+  windowCreatAcc.classList.remove("windowShow");
+});
+
+closeCreatForm.addEventListener("click", function () {
+  // alert(e.target.id);
+  windowCreatAcc.classList.add("windowShow");
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode == 27) {
+    // код клавиши Escape, но можно использовать e.key
+    windowCreatAcc.classList.add("windowShow");
+  }
+});
+
+windowCreatAcc.addEventListener("click", (e) => {
+  const withinCreateBoundaries = e.composedPath().includes(createClose);
+
+  if (!withinCreateBoundaries) {
+    windowCreatAcc.classList.add("windowShow"); // скрываем элемент т к клик был за его пределами
+  }
+});
+
+btnOpenLoginForm.addEventListener("click", function () {
+  windowCreatAcc.classList.add("windowShow");
+  forms.classList.remove("windowShow");
 });

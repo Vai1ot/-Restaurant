@@ -36,6 +36,19 @@
    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 1);
 }
 
+.create-form {
+   position: relative;
+   width: 960px;
+   background: white;
+   border-radius: 10px;
+   padding: 97px 120px 33px 95px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   overflow: hidden;
+   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 1);
+}
+
 .close-form-div {
    position: absolute;
    right: 20px;
@@ -53,6 +66,17 @@
 }
 
 .login-img img {
+   max-width: 100%;
+}
+
+.create-img {
+   width: 316px;
+   display: flex;
+   align-items: flex-start;
+   margin-top: 65px;
+}
+
+.create-img img {
    max-width: 100%;
 }
 
@@ -80,6 +104,11 @@
 
 .text2 {
    padding-top: 136px;
+   text-align: center;
+}
+
+.text3 {
+   padding-top: 96px;
    text-align: center;
 }
 
@@ -348,6 +377,12 @@ textarea:-ms-input-placeholder {
       padding: 100px 15px 33px 15px;
    }
 }
+
+/* Валидация */
+input:invalid {border-color: red;}
+
+
+
 
 
 /*------------------------------------------------------------------
