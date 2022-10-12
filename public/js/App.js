@@ -107,8 +107,8 @@ function SearchProduct() {
       count++;
     }
   }
-  console.log(count + "count");
-  console.log(card.length + "card");
+  // console.log(count + "count");
+  // console.log(card.length + "card");
   if (card.length === count) {
     errorSearch.classList.remove("SearchText");
   } else {
@@ -120,6 +120,7 @@ function SearchProduct() {
 const btnOpenForm = document.getElementById("show-btn");
 const forms = document.getElementById("window-show");
 const closeForm = document.getElementById("closeForm");
+const loginClose = document.getElementById("closeLogin");
 
 btnOpenForm.addEventListener("click", function () {
   // alert(e.target.id);
@@ -129,4 +130,19 @@ btnOpenForm.addEventListener("click", function () {
 closeForm.addEventListener("click", function () {
   // alert(e.target.id);
   forms.classList.add("windowShow");
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode == 27) {
+    // код клавиши Escape, но можно использовать e.key
+    forms.classList.add("windowShow");
+  }
+});
+
+forms.addEventListener("click", (e) => {
+  const withinBoundaries = e.composedPath().includes(loginClose);
+
+  if (!withinBoundaries) {
+    forms.classList.add("windowShow"); // скрываем элемент т к клик был за его пределами
+  }
 });

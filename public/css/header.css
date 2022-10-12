@@ -9,8 +9,7 @@ header {
 	box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 1);
 }
 
-.header a {
-	text-decoration: none;
+.header button {
 	color: rgb(0, 0, 0);
 }
 
@@ -24,5 +23,4 @@ header {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-
 }

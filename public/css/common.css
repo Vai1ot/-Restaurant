@@ -22,10 +22,9 @@ a,
 p,
 button,
 form,
-input,
 textarea {
 	font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
-		-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+		-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif !important;
 	color: #262626;
 }
 
@@ -70,12 +69,6 @@ textarea {
 	.main-footer-res a,
 	.main-footer a {
 		text-decoration: none;
-	}
-
-	.header-button:active {
-		background: rgb(38, 38, 38);
-		color: rgb(255, 255, 255);
-		border-color: rgb(0, 0, 0);
 	}
 
 	header img,

@@ -89,10 +89,10 @@
    color: #666666;
    margin: 0px;
    text-decoration: underline;
-   transition: all 0.4s;
+   -moz-transition: all 0.4s;
    -webkit-transition: all 0.4s;
    -o-transition: all 0.4s;
-   -moz-transition: all 0.4s;
+   transition: all 0.4s;
 }
 
 .window a:focus {
@@ -106,23 +106,23 @@
 
 
 textarea:focus,
-input:focus {
+.input:focus {
    border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder {
+.input:focus::-webkit-input-placeholder {
    color: transparent;
 }
 
-input:focus:-moz-placeholder {
+.input:focus:-moz-placeholder {
    color: transparent;
 }
 
-input:focus::-moz-placeholder {
+.input:focus::-moz-placeholder {
    color: transparent;
 }
 
-input:focus:-ms-input-placeholder {
+.input:focus:-ms-input-placeholder {
    color: transparent;
 }
 
@@ -142,19 +142,19 @@ textarea:focus:-ms-input-placeholder {
    color: transparent;
 }
 
-input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
    color: #999999;
 }
 
-input:-moz-placeholder {
+.input:-moz-placeholder {
    color: #999999;
 }
 
-input::-moz-placeholder {
+.input::-moz-placeholder {
    color: #999999;
 }
 
-input:-ms-input-placeholder {
+.input:-ms-input-placeholder {
    color: #999999;
 }
 
