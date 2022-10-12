@@ -10,6 +10,13 @@ ol[class] {
   list-style: none;
 }
 
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
 body,
 h1,
 h2,
@@ -44,4 +51,19 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none;
+  border: none;
 }

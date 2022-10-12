@@ -115,3 +115,18 @@ function SearchProduct() {
     errorSearch.classList.add("SearchText");
   }
 }
+
+// ---- Форма регистрации ----
+const btnOpenForm = document.getElementById("show-btn");
+const forms = document.getElementById("window-show");
+const closeForm = document.getElementById("closeForm");
+
+btnOpenForm.addEventListener("click", function () {
+  // alert(e.target.id);
+  forms.classList.remove("windowShow");
+});
+
+closeForm.addEventListener("click", function () {
+  // alert(e.target.id);
+  forms.classList.add("windowShow");
+});

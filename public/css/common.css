@@ -20,7 +20,10 @@ h5,
 h6,
 a,
 p,
-button {
+button,
+form,
+input,
+textarea {
 	font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans',
 		-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
 	color: #262626;
