@@ -348,10 +348,12 @@ textarea:-ms-input-placeholder {
 @media (max-width: 992px) {
    .login-form {
       padding: 137px 90px 33px 85px;
+      margin-bottom: 20px;
    }
 
    .create-form {
       padding: 97px 90px 33px 85px;
+      margin-bottom: 20px;
    }
 
    .login-img {
@@ -372,10 +374,12 @@ textarea:-ms-input-placeholder {
 @media (max-width: 876px) {
    .login-form {
       padding: 100px 80px 33px 80px;
+      margin-bottom: 50px;
    }
 
    .create-form {
       padding: 80px 80px 33px 80px;
+      margin-bottom: 50px;
    }
 
    .login-img {
@@ -394,10 +398,12 @@ textarea:-ms-input-placeholder {
 @media (max-width: 576px) {
    .login-form {
       padding: 100px 15px 33px 15px;
+      margin-bottom: 50px;
    }
 
    .create-form {
       padding: 100px 15px 33px 15px;
+      margin-bottom: 50px;
    }
 }
 
