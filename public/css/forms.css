@@ -398,12 +398,12 @@ textarea:-ms-input-placeholder {
 @media (max-width: 576px) {
    .login-form {
       padding: 100px 15px 33px 15px;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
    }
 
    .create-form {
       padding: 100px 15px 33px 15px;
-      margin-bottom: 50px;
+      margin-bottom: 55px;
    }
 }
 
