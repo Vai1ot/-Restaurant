@@ -183,3 +183,12 @@ btnOpenLoginForm.addEventListener("click", function () {
   windowCreatAcc.classList.add("windowShow");
   forms.classList.remove("windowShow");
 });
+
+// Запрект на вызов контекстного меню для изображений
+var img = document.getElementsByTagName("img");
+
+for (var i in img) {
+  img[i].oncontextmenu = function () {
+    return false;
+  };
+}
