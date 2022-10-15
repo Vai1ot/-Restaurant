@@ -44,8 +44,8 @@ var LangArr = {
     en: "$$ • Burgers",
   },
   cat_2: {
-    ru: "₽ • Японская • Китайская • Азиатская",
-    en: "$$ • Japanese • Chinese • Asian",
+    ru: "₽ • Японская • Азиатская",
+    en: "$$ • Japanese • Asian",
   },
   cat_3: {
     ru: "₽ • Американская • Европейская",

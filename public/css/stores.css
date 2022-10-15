@@ -16,7 +16,7 @@
 	color: #262626;
 }
 
-.stores img {
+.card-img img {
 	width: 100%;
 	overflow: hidden;
 	display: block;
@@ -26,6 +26,6 @@
 	margin-top: 25px;
 }
 
-.stores.hide{
+.stores.hide {
 	display: none;
 }

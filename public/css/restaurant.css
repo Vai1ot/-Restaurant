@@ -38,10 +38,6 @@
 	margin-bottom: 30px;
 }
 
-.h2-slider {
-	font-size: 2.4em;
-	line-height: 1.5em;
-}
 
 .btn-slaider {
 	background-color: rgb(27, 27, 27);
@@ -102,7 +98,7 @@
 }
 
 .text-content {
-	padding: 23px 0 23px 17px;
+	padding: 23px 10px 23px 17px;
 }
 
 .title-card-menu h4 {
@@ -121,10 +117,7 @@
 	font-weight: 600;
 }
 
-.icon-store img {
-	width: 120px;
-	height: 40px;
-}
+
 
 @media (max-width: 1200px) {
 	.card-menu {
@@ -157,49 +150,12 @@
 
 }
 
-@media (max-width: 375px) {
-	.h2-slider {
-		font-size: 1.6em;
-		line-height: 1.5em;
-	}
+
+@media (max-width: 400px) {
 
 	.btn-slaider {
 		margin-top: 20px;
 		margin-left: 0;
-	}
-
-	.content-slaider {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.title-card-menu h4 {
-		font-size: 0.6em;
-		line-height: 1.5em;
-	}
-
-	.title-card-menu p {
-		margin-top: 3px;
-		font-size: 0.4em;
-		line-height: 1.53em;
-		color: #8a8a8a;
-	}
-
-	.price-card-menu p {
-		font-weight: 600;
-		font-size: 0.6em;
-	}
-
-	.icon-store img {
-		width: 60px;
-		height: 20px;
-	}
-}
-
-@media (max-width: 400px) {
-	.h2-slider {
-		font-size: 2em;
-		line-height: 1.5em;
 	}
 
 	.slaider-title {
@@ -216,31 +172,62 @@
 		flex-direction: column;
 	}
 
-	.title-card-menu h4 {
-		font-size: 0.7em;
-		line-height: 1.5em;
+	.price-card-menu p {
+		margin-top: 20px;
 	}
 
+}
+
+@media (max-width: 767px) {
 	.img-content img {
-		width: 140px;
-		height: 112px;
+		width: calc(140px + (60 + 60 * 0.7) * ((100vw - 320px) / 1280));
+		height: 100%;
+	}
+
+	.ic-store img {
+		width: calc(80px + (40 + 40 * 0.7) * ((100vw - 320px) / 1280));
+	}
+
+	.h2-slider {
+		font-size: calc(24px + (14 + 14 * 0.7) * ((100vw - 320px) / 1280));
+	}
+
+	.title-card-menu h4 {
+		font-size: calc(11px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280));
 	}
 
 	.title-card-menu p {
-		margin-top: 3px;
-		font-size: 0.6em;
-		line-height: 1.53em;
-		color: #8a8a8a;
+		font-size: calc(10px + (3 + 3 * 0.7) * ((100vw - 320px) / 1280));
 	}
 
 	.price-card-menu p {
-		font-weight: 600;
-		font-size: 0.6em;
+		font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1280));
+	}
+}
+
+@media (min-width: 767px) {
+	.img-content img {
+		width: calc(140px + 60 * (100vw / 1280));
+		height: auto;
 	}
 
-	.icon-store img {
-		width: 80px;
-		height: 30px;
+	.ic-store img {
+		width: calc(80px + 40 * (100vw / 1280));
 	}
 
+	.h2-slider {
+		font-size: calc(24px + 14 * (100vw / 1280));
+	}
+
+	.title-card-menu h4 {
+		font-size: calc(11px + 5 * (100vw / 1280));
+	}
+
+	.title-card-menu p {
+		font-size: calc(10px + 3 * (100vw / 1280));
+	}
+
+	.price-card-menu p {
+		font-size: calc(10px + 6 * (100vw / 1280));
+	}
 }
