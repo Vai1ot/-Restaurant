@@ -29,7 +29,7 @@ app.use("/auth", authRouter);
 
 const start = async () => {
    try {
-      await mongoose.connect('mongodb+srv://RendellBase:22222222@atlascluster.xswswsd.mongodb.net/?retryWrites=true&w=majority');
+      await mongoose.connect('mongodb+srv://RendellBase:<Password>@atlascluster.xswswsd.mongodb.net/?retryWrites=true&w=majority');
       app.listen(PORT, HOST, () => console.log('server started on port' + ' ' + PORT));
    }
    catch (e) {
