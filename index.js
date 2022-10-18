@@ -25,6 +25,10 @@ app.get('/restaurant-ru', (req, res) => {
    res.render('restaurant-ru');
 });
 
+app.use(function (req, res, next) {
+   res.status(404).render('404');
+});
+
 app.use("/auth", authRouter);
 
 const start = async () => {
