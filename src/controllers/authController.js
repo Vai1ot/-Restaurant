@@ -14,6 +14,8 @@ const generateAccessToken = (id, roles) => {
 };
 
 class authController {
+
+   // Регистрация
    async registration(req, res) {
       try {
          const errors = validationResult(req);
@@ -36,6 +38,7 @@ class authController {
       }
    }
 
+   // Авторизация
    async login(req, res) {
       try {
          const { username, password } = req.body;
@@ -49,7 +52,8 @@ class authController {
          }
          const token = generateAccessToken(user._id, user.roles);
          return res.json({ token });
-      } catch (e) {
+      }
+      catch (e) {
          console.log(e);
          res.status(400).json({ message: 'Login error' });
       }
